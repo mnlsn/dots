@@ -1,0 +1,95 @@
+# shell = { program = "/opt/homebrew/bin/bash", args = "--login" }
+import = [
+  # "~/.config/alacritty/themes/themes/hyper.toml",
+  "~/.config/alacritty/themes/themes/tokyo-night.toml",
+]
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# [colors.primary]
+# background = "#000000"
+
+[env]
+term = "xterm-256color"
+
+# [font]
+# size = 15
+# [font.bold]
+# family = "Hack Nerd Font"
+# style = "Bold"
+# [font.bold_italic]
+# family = "Hack Nerd Font"
+# style = "Bold Italic"
+# [font.italic]
+# family = "Hack Nerd Font"
+# style = "Italic"
+# [font.normal]
+# family = "Hack Nerd Font"
+# style = "Regular"
+
+# [font]
+# size = 16
+# [font.bold]
+# family = "UbuntuMono Nerd Font"
+# style = "Bold"
+# [font.bold_italic]
+# family = "UbuntuMono Nerd Font"
+# style = "Bold Italic"
+# [font.italic]
+# family = "UbuntuMono Nerd Font"
+# style = "Italic"
+# [font.normal]
+# family = "UbuntuMono Nerd Font"
+# style = "Regular"
+
+# [font]
+# size = 15.2
+# [font.bold]
+# family = "SauceCodePro Nerd Font"
+# style = "Bold"
+# [font.bold_italic]
+# family = "SauceCodePro Nerd Font"
+# style = "Bold Italic"
+# [font.italic]
+# family = "SauceCodePro Nerd Font"
+# style = "Italic"
+# [font.normal]
+# family = "SauceCodePro Nerd Font"
+# style = "Regular"
+
+[font]
+size = 15.5
+[font.bold]
+family = "Pragmasevka Nerd Font"
+style = "Bold"
+[font.bold_italic]
+family = "Pragmasevka Nerd Font"
+style = "Bold Italic"
+[font.italic]
+family = "Pragmasevka Nerd Font"
+style = "Italic"
+[font.normal]
+family = "Pragmasevka Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 2
+y = 2
+
+[scrolling]
+history = 10000
+
+[selection]
+save_to_clipboard = true
+
+[window]
+title = "Nelson"
+opacity = 0.87
+decorations = "Transparent"
+option_as_alt = "Both"
+decorations_theme_variant = "Dark"
+
+[window.padding]
+x = 10
+y = 8
