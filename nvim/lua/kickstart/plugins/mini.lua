@@ -21,7 +21,7 @@ return {
       require('mini.indentscope').setup()
       require('mini.move').setup()
       require('mini.notify').setup()
-      require('mini.sessions').setup { autoread = true }
+      -- require('mini.sessions').setup { autoread = true }
       require('mini.splitjoin').setup()
 
       -- Add/delete/replace surroundings (brackets, quotes, etc.)

@@ -5,10 +5,10 @@ return {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
-      width = 200,
+      width = 240,
       plugins = {
         alacritty = {
-          enabled = true,
+          enabled = false,
           font = '20',
         },
       },

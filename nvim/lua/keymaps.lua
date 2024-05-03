@@ -101,9 +101,9 @@ vim.keymap.set('n', '<leader><tab><tab>', '<cmd>tabnew<cr>', { desc = 'New Tab' 
 vim.keymap.set('n', '<leader><tab>]', '<cmd>tabnext<cr>', { desc = 'Next Tab' })
 vim.keymap.set('n', '<leader><tab>d', '<cmd>tabclose<cr>', { desc = 'Close Tab' })
 vim.keymap.set('n', '<leader><tab>[', '<cmd>tabprevious<cr>', { desc = 'Previous Tab' })
-vim.keymap.set('n', '<leader>a', '<cmd>AerialToggle!<CR>', { desc = 'Symbols Outline' })
+vim.keymap.set('n', '<leader>o', '<cmd>AerialToggle!<CR>', { desc = 'Symbols Outline' })
 vim.keymap.set('n', '<leader>z', '<cmd>ZenMode<cr>', { desc = 'Toggle Zen Mode' })
-vim.keymap.set('n', '<leader>gb', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle Git Blame' })
+vim.keymap.set('n', '<leader>gh', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle [G]it Blame Inlay [H]ints' })
 
 -- add undo breakpoints
 vim.keymap.set('i', ',', ',<c-g>u')

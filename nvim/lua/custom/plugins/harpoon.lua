@@ -32,13 +32,15 @@ return {
             },
             previewer = require('telescope.config').values.file_previewer {},
             sorter = require('telescope.config').values.generic_sorter {},
+            layout_strategy = 'vertical',
             layout_config = {
-              height = 0.7,
+              height = 0.9,
               width = 0.90,
-              prompt_position = 'top',
-              preview_cutoff = 80,
-              preview_width = 0.6,
+              prompt_position = 'bottom',
+              preview_cutoff = 20,
+              preview_height = 0.7,
             },
+            path_display = { 'truncate' },
             attach_mappings = function(prompt_bufnr, map)
               map('i', '<C-r>', function()
                 local state = require 'telescope.actions.state'
