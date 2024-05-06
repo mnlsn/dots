@@ -355,3 +355,5 @@ plugins {
 //
 // styled_underlines false
 theme "tokyo-night"
+
+pane_frames false
