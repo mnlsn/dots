@@ -48,6 +48,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('v', '>', '>gv')
@@ -104,6 +107,7 @@ vim.keymap.set('n', '<leader><tab>[', '<cmd>tabprevious<cr>', { desc = 'Previous
 vim.keymap.set('n', '<leader>o', '<cmd>AerialToggle!<CR>', { desc = 'Symbols Outline' })
 vim.keymap.set('n', '<leader>z', '<cmd>ZenMode<cr>', { desc = 'Toggle Zen Mode' })
 vim.keymap.set('n', '<leader>gh', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle [G]it Blame Inlay [H]ints' })
+vim.keymap.set('n', '<leader>ms', '<cmd>mksession<cr>', { desc = '[M]ake [S]ession' })
 
 -- add undo breakpoints
 vim.keymap.set('i', ',', ',<c-g>u')

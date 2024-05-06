@@ -24,11 +24,11 @@ return {
         },
         sections = {
           lualine_a = { 'mode' },
-          lualine_b = { 'branch', 'diff', 'diagnostics', 'searchcount' },
-          lualine_c = { 'buffers' },
-          lualine_x = { 'tabs' },
-          lualine_y = { 'fileformat', 'filetype' },
-          lualine_z = { 'location' },
+          lualine_b = { 'branch', 'searchcount' },
+          lualine_c = { 'diff', 'diagnostics' },
+          lualine_x = { 'fileformat', 'filetype' },
+          lualine_y = { 'location' },
+          lualine_z = { 'tabs' },
         },
         inactive_sections = {
           lualine_a = {},
