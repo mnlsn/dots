@@ -16,7 +16,12 @@ return {
 
       local files = require 'mini.files'
       files.setup()
-      vim.keymap.set('n', '<leader>e', files.open)
+      local openCurrent = function()
+        files.open(vim.api.nvim_buf_get_name(0))
+        files.reveal_cwd()
+      end
+      vim.keymap.set('n', '<leader>e', files.open, { desc = 'Open Files' })
+      vim.keymap.set('n', '<leader>i', openCurrent, { desc = 'Open Files [i]n cwd' })
 
       local indents = require 'mini.indentscope'
       indents.config = {

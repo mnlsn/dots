@@ -48,7 +48,10 @@ return {
           layout_strategy = 'horizontal',
           layout_config = { prompt_position = 'top', width = 0.90, horizontal = { preview_width = 0.65 } },
           sorting_strategy = 'ascending',
-          path_display = { shorten = 12, truncate = 3 },
+          path_display = function(opts, path)
+            local tail = require('telescope.utils').path_tail(path)
+            return string.format('%s (%s)', tail, path)
+          end,
         },
 
         extensions = {

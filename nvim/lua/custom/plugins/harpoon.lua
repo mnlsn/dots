@@ -40,7 +40,10 @@ return {
               preview_cutoff = 20,
               preview_height = 0.7,
             },
-            path_display = { 'truncate' },
+            path_display = function(opts, path)
+              local tail = require('telescope.utils').path_tail(path)
+              return string.format('%s (%s)', tail, path)
+            end,
             attach_mappings = function(prompt_bufnr, map)
               map('i', '<C-r>', function()
                 local state = require 'telescope.actions.state'

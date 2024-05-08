@@ -19,12 +19,6 @@ vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = 'Open [D]i
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
--- TIP: Disable arrow keys in normal mode
--- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
--- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
--- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
--- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
-
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
@@ -60,6 +54,8 @@ vim.keymap.set('i', '<C-s>', '<cmd>w<cr><esc>', { desc = 'Write file' })
 vim.keymap.set('n', '<C-s>', '<cmd>w<cr><esc>', { desc = 'Write file' })
 vim.keymap.set('s', '<C-s>', '<cmd>w<cr><esc>', { desc = 'Write file' })
 vim.keymap.set('x', '<C-s>', '<cmd>w<cr><esc>', { desc = 'Write file' })
+
+vim.keymap.set('i', '<C-c>', '<Esc>')
 
 local diagnostic_goto = function(next, severity)
   local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
@@ -104,7 +100,7 @@ vim.keymap.set('n', '<leader><tab><tab>', '<cmd>tabnew<cr>', { desc = 'New Tab' 
 vim.keymap.set('n', '<leader><tab>]', '<cmd>tabnext<cr>', { desc = 'Next Tab' })
 vim.keymap.set('n', '<leader><tab>d', '<cmd>tabclose<cr>', { desc = 'Close Tab' })
 vim.keymap.set('n', '<leader><tab>[', '<cmd>tabprevious<cr>', { desc = 'Previous Tab' })
-vim.keymap.set('n', '<leader>o', '<cmd>AerialToggle!<CR>', { desc = 'Symbols Outline' })
+vim.keymap.set('n', '<leader>o', '<cmd>AerialToggle<CR>', { desc = 'Symbols Outline' })
 vim.keymap.set('n', '<leader>z', '<cmd>ZenMode<cr>', { desc = 'Toggle Zen Mode' })
 vim.keymap.set('n', '<leader>gh', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle [G]it Blame Inlay [H]ints' })
 vim.keymap.set('n', '<leader>ms', '<cmd>mksession<cr>', { desc = '[M]ake [S]ession' })
