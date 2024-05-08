@@ -1,2 +1,4 @@
 .DS_Store
 Session.vim
+/zellij/zellij_forgot.wasm
+/zellij/zjstatus.wasm
