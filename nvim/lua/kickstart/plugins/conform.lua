@@ -43,6 +43,7 @@ return {
 
         css = { { 'prettierd', 'prettier' } },
         scss = { { 'prettierd', 'prettier' } },
+        zig = { 'zls' },
       },
     },
   },
